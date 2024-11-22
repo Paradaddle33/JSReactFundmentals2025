@@ -1,6 +1,6 @@
 # JSReact Fundamentals 2025
 
-** Winter 2024**
+** Winter 20245**
 
 This is the git repository for the class. It will be updated on a class by class basis.
 
