@@ -22,6 +22,7 @@ const getAnswer = (filePath) => {
   }
 };
 
+
 const consoleHelper = (fn = function () {}) => {
   const newFn = eval(`((callback) => {
     try {
