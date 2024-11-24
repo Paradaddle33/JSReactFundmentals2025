@@ -5,4 +5,4 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-const myNumber = 3;
+let myNumber = 3;

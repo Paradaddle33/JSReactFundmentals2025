@@ -5,4 +5,4 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let newYear = 2024;
+let year = 2024;
