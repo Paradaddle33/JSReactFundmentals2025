@@ -10,6 +10,7 @@ describe("Variables", () => {
   describe("01-variables", () => {
     test('should contain a variable called "myNumber" (that is not declared with "var")', () => {
       const str = getMyNumber.toString();
+      console.log('str', str);
       expect(str).toMatch(/let/);
     });
     test('"myNumber" should equal any number', () => {
