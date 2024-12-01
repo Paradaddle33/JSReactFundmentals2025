@@ -4,4 +4,5 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-const myNumber = 7;
+
+let myNumber = 3;
