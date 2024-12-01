@@ -6,3 +6,7 @@
 // WRITE YOUR ANSWER BELOW THIS LINE
 
 const result = 3 + 5 * 100;
+
+const resMod = (3 + 5) * 100;
+
+console.log(resMod);

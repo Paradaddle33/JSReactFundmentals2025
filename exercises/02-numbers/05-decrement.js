@@ -7,3 +7,5 @@ let age = 90; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let benButton = age -= 1;
+console.log(benButton);
