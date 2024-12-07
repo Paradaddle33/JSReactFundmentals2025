@@ -9,4 +9,8 @@ let num2 = "7"; // e.g.
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 
-let sum = num1 + num2;
+
+let sum = num1 + Number(num2);
+
+console.log(sum); // This will output: 9
+
