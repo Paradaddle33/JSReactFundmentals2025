@@ -10,3 +10,17 @@ let num2 = 20; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let isLargerNumber;
+
+isLargerNumber = num2 > num1;
+
+console.log(isLargerNumber);
+
+isLargerNumber = num2 < num1
+
+console.log(isLargerNumber);
+
+isLargerNumber = num2 === num1
+
+
+console.log(isLargerNumber);
