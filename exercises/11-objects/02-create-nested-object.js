@@ -29,9 +29,7 @@ let linkedInLink = "https://linkedin.com/profile"; // e.g.
  * are different values.
  */
 
-// WRITE YOUR ANSWER BELOW THIS LINE
-
-
+// Creating the nested object
 let graduate = {
     name,
     graduationYear,
@@ -41,3 +39,6 @@ let graduate = {
         linkedIn: linkedInLink
     }
 };
+
+
+console.log(graduate);

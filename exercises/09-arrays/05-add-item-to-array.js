@@ -5,3 +5,7 @@ let languages = ["C++"]; // Do not change this line
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+languages.push("Javascript", "Python", "Java");
+
+console.log(languages);

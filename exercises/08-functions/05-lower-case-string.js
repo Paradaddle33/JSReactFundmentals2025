@@ -16,3 +16,8 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const lowerCaseString = (str) => {
+    return str.toLowerCase();
+};
+
+console.log(lowerCaseString("CAN YOU DIG IT"));

@@ -8,5 +8,4 @@ let array2 = ["lion", "leopard", "saber tooth tiger"];
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-const newArray = [...array1,...array2];
-console.log(newArray);
+let newArray = [...array1, ...array2]; console.log(newArray);

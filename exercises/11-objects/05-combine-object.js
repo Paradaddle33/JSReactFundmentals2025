@@ -1,5 +1,5 @@
-const obj1 = { firstName: "Clark" }; // e.g.
-const obj2 = { lastName: "Kent" }; // e.g.
+const obj1 = { firstName: "John" }; // e.g.
+const obj2 = { lastName: "Snow" }; // e.g.
 
 /**
  * Create an object called "myObject".

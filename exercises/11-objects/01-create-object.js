@@ -9,8 +9,8 @@
 
 // WRITE YOUR ANSWER BELOW THIS LINE
 const myDog = {
-   name: 'fido',
-   breed:'pitbull',
-   age:5,
-   owners:['pete','thomas']
+   name: 'Markus',
+   breed:'Golden Retriever',
+   age:1,
+   owners:['keith','manning']
 };

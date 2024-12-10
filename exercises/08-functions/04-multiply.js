@@ -16,3 +16,8 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const multiply = (num1, num2) => {
+    return(num1 * num2);
+}
+
+console.log(multiply(4, 7))

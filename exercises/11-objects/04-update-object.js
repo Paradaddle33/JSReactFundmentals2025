@@ -3,15 +3,10 @@ let student = {
   skills: ["JavaScript"],
 };
 
-/**
- * Update the "student" object name to equal your name.
- * Add another skill to the "skills" array.
- * @example
- * console.log(student);
- * {
- *   name: "Jamal Taylor",
- *   skills: ["JavaScript", "Being a permanent student"],
- * };
- */
+// Update the student's name to your name
+student.name = "Your Name"; // Replace "Your Name" with your actual name
 
-// WRITE YOUR ANSWER BELOW THIS LINE
+// Add another skill to the skills array
+student.skills.push("Being a permanent student"); // You can replace this with any skill you like
+
+console.log(student);
