@@ -1,15 +1,17 @@
 import prompt from "picoprompt";
+//This program will only generate the number one time, and will close when guessed correctly.
 
-// create a function to generate a random number. Number parameter should range lowest to highest.
+
+// create a function to generate the random number. Number parameter should range lowest to highest.
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-// create a random number between 1 and 10 using the function getRandomNumber
+// create a random number on the cpu side
 const secretNumber = getRandomNumber(1, 10);
 
-// create a boolean for the initial guess.
-let guessedCorrectly = false;
+// set a boolean value for the initial guess.
+let guessedCorrectly = true;
 
 
 while (!guessedCorrectly) {
