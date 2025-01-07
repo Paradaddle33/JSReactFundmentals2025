@@ -11,5 +11,12 @@
  * Do not change the HTML unless you are instructed to do so.
  */
 (function () {
-  // Put your answers in here
+  console.log(document.querySelector("li"));
+  console.log(document.querySelector("#myId"));
+  console.log(document.querySelector(".bg-warning"));
+  console.log(document.querySelector("#target-btn"));
+  console.log(document.querySelector(".social-media-links"));
+  console.log(document.querySelector("#myRow .col"));
+
+
 })();

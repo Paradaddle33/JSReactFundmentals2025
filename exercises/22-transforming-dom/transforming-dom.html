@@ -18,71 +18,86 @@
     <script src="transforming-dom.js" defer></script>
   </head>
   <body>
-      <div class="alert alert-danger">
-        <p>
-          Edit the <code class="text-dark">&lt;img&gt;</code> tag below so that
-          it displays an image. (You can use the image
-          <a
-            href="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
-            target="_blank"
-            >https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif</a
-          >
-          or any other image of your choice.)
-        </p>
-        <img height="250" alt="Hard at Work" />
-      </div>
+    <div class="alert alert-danger">
+      <p>
+        Edit the <code class="text-dark">&lt;img&gt;</code> tag below so that it
+        displays an image. (You can use the image
+        <a
+          href="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
+          target="_blank"
+          >https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif</a
+        >
+        or any other image of your choice.)
+      </p>
+      <!-- Changed the <img> tag to display an image -->
+      <img
+        src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
+        height="250"
+        alt="Hard at Work"
+      />
+    </div>
 
-      <div class="alert alert-warning">
-        Change the link below so that when clicked on, it links to
-        <em>https://developer.mozilla.org/en-US/docs/Web/JavaScript</em>.
-        <div>
-          <a href="https://www.w3schools.com/js/default.asp" target="_blank"
-            >Read the (unofficial) JavaScript manual</a
-          >
-        </div>
+    <div class="alert alert-warning">
+      Change the link below so that when clicked on, it links to
+      <em>https://developer.mozilla.org/en-US/docs/Web/JavaScript</em>.
+      <div>
+        <!-- Changed the href attribute to link to MDN -->
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          target="_blank"
+          >Read the (unofficial) JavaScript manual</a
+        >
       </div>
+    </div>
 
-      <div class="alert alert-success">
-        Change the text inside this <em>&lt;div&gt;</em> to say "I am
-        victorious!"
-      </div>
+    <div class="alert alert-success">
+      <!-- Changed the text inside this <div> -->
+      Change the text inside this <em>&lt;div&gt;</em> to say "I am victorious!"
+      <div>I am victorious!</div>
+    </div>
 
-      <div class="alert alert-info">
+    <div class="alert alert-info">
+      <!-- Changed the background color using inline styles -->
+      <div style="background-color: #add8e6">
         Change the background color of this <em>&lt;div&gt;</em> to another
         color using inline styles.
       </div>
+    </div>
 
-      <div class="alert alert-danger">
+    <div class="alert alert-danger">
+      <!-- Changed the text color by changing the class -->
+      <div class="text-primary">
         Change the text color of this <em>&lt;div&gt;</em> to another color by
         changing the class.
-        <a
-          href="https://getbootstrap.com/docs/4.5/utilities/colors/"
-          target="_blank"
-          >See Bootstrap colors.</a
-        >
-      </div>
-
-      <div class="alert alert-warning">
-        Hide this <em>&lt;div&gt;</em> using inline styles.
-      </div>
-
-      <p class="mb-0">
-        Show the hidden <code>&lt;div&gt;</code> below by modifying the
-        <em>class</em> in some way.
-      </p>
-      <div class="alert alert-success hidden">Peek a boo!</div>
-
-      <div class="alert alert-info mt-5">
-        Using conditional logic (e.g. an if statement), change the
-        <em>&lt;div&gt;</em> below to say "&check; blue" if
-        <button class="btn btn-primary ml-1 m4-1" type="button">
-          this button
-        </button>
-        has class <em>btn-primary</em>.
-        <div class="text-dark">
-          <!-- if button has class "btn-primary", put text here -->
-        </div>
       </div>
     </div>
+
+    <div class="alert alert-warning">
+      <!-- Hid this <div> using inline styles -->
+      <div style="display: none">
+        Hide this <em>&lt;div&gt;</em> using inline styles.
+      </div>
+    </div>
+
+    <p class="mb-0">
+      Show the hidden <code>&lt;div&gt;</code> below by modifying the
+      <em>class</em> in some way.
+    </p>
+    <!-- Removed the 'hidden' class to show the <div> -->
+    <div class="alert alert-success">Peek a boo!</div>
+
+    <div class="alert alert-info mt-5">
+      Using conditional logic (e.g. an if statement), change the
+      <em>&lt;div&gt;</em> below to say "&check; blue" if
+      <button class="btn btn-primary ml-1 m4-1" type="button">
+        this button
+      </button>
+      has class <em>btn-primary</em>.
+      <div class="text-dark">
+        <!-- if button has class "btn-primary", put text here -->
+      </div>
+    </div>
+
+    <script></script>
   </body>
 </html>
