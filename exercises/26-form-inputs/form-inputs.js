@@ -12,7 +12,21 @@
    * display what they selected inside of the empty <span> tags.
    * (See the comments in the HTML for what <span> tags to sue.)
    */
-  // Write your answer here
+  (function () {
+    const emailInput = document.getElementById("email");
+    const titleSelect = document.getElementById("title");
+    const emailSpan = document.querySelector(".card-body > div.mb-3:nth-child(1) > span");
+    const titleSpan = document.querySelector(".card-body > div.mb-3:nth-child(2) > span");
+  
+    emailInput.addEventListener("input", function () {
+      emailSpan.textContent = emailInput.value;
+    });
+  
+    titleSelect.addEventListener("change", function () {
+      titleSpan.textContent = titleSelect.options[titleSelect.selectedIndex].textContent;
+    });
+  })();
+  
   /**
    * Problem 2: Handle a checkbox
    *
@@ -22,7 +36,19 @@
    *
    * As a bonus, see if you can hide the <div> tag if they uncheck the checkbox.
    */
-  // Write your answer here.
+  (function () {
+    const promotionsCheckbox = document.getElementById("shouldSendPromotions");
+    const promotionsDiv = document.querySelector(".card-body .hidden");
+  
+    promotionsCheckbox.addEventListener("change", function () {
+      if (promotionsCheckbox.checked) {
+        promotionsDiv.classList.remove("hidden");
+      } else {
+        promotionsDiv.classList.add("hidden");
+      }
+    });
+  })();
+  
   /**
    * Problem 3: Input validation
    *
@@ -34,5 +60,17 @@
    * You can use the "input" or "change" events, but the general UX recommendation
    * is to use "blur" events for these types of error messages (form validation errors).
    */
-  // Write your answer here
+  (function () {
+    const emailInput = document.getElementById("email");
+    const emailError = document.querySelector(".invalid-feedback");
+  
+    emailInput.addEventListener("blur", function () {
+      if (!emailInput.value.trim()) {
+        emailError.style.display = "block";
+      } else {
+        emailError.style.display = "none";
+      }
+    });
+  })();
+  
 })();
