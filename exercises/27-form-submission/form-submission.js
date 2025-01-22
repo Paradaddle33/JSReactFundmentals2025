@@ -16,7 +16,12 @@
    * The exercise must be completed with a form handler
    * and you must prevent the page from refreshing when the form is submitted.
    */
-  // Write your answer here
+  const inputGroup = document.querySelector(".mb-3");
+  inputGroup.addEventListener("submit", (event) =>  {
+    event.preventDefault();
+    console.log(inputGroup);
+  });
+
   /**
    * Problem 2: Agree to the terms and conditions
    *

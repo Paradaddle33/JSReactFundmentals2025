@@ -29,7 +29,20 @@
      * Note that this won't display until you click on the "Search" button.
      */
 
-    // Write you JavaScript here
+    const handleSubmit = (e) => {
+      e.preventDefault();
+    
+      const ocean = oceanInput.value;
+    
+      // Create a paragraph element
+      const p = document.createElement("p");
+      p.className = "italic";
+      p.textContent = `No results for ${ocean} found.`;
+    
+      // Add the paragraph to the page
+      document.querySelector(".container").appendChild(p);
+    };
+    
   };
 
   document
@@ -58,13 +71,14 @@
    */
 
   // Update me
-  const movieHtml = `<img src="_____" />
-  <div class="flex-auto my-4">
-    <h1 class="text-2xl mb-4">_____ <small>(_____)</small></h1>
-    <p clas="mb-4">
-      ${movie.description}
-    </p>
-  </div>`;
+  const movieHtml = `<img src="${movie.imgSrc}" />
+<div class="flex-auto my-4">
+  <h1 class="text-2xl mb-4">${movie.title} <small>(${movie.year})</small></h1>
+  <p class="mb-4">
+    ${movie.description}
+  </p>
+</div>`;
+
 
   /**
    * STEP 2
@@ -72,7 +86,8 @@
    * See the comments in the HTML for where to add it.
    */
 
-  // Write you JavaScript here
+  document.querySelector(".grid").insertAdjacentHTML("beforeend", movieHtml);
+
 
   /**
    * Problem 3: Create a ChatGPT conversation from an array of objects
@@ -119,5 +134,16 @@
     </div>
    */
 
-  // Write you JavaScript here
+    const conversationContainer = document.querySelector(".container:last-child");
+
+    conversationDialogues.forEach((dialogue) => {
+      const conversationHtml = `
+        <div class="border-solid border-2 border-slate-200 rounded p-2 mb-4">
+          <div class="font-bold">${dialogue.author}</div>
+          <p>${dialogue.message}</p>
+        </div>
+      `;
+      conversationContainer.insertAdjacentHTML("beforeend", conversationHtml);
+    });
+    
 })();
