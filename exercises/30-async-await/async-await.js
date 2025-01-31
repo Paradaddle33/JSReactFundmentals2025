@@ -1,18 +1,17 @@
 (function () {
-  /**
-   * As a user, I should be able to click on the a button to see random dog images.
-   * Please use async and await in this example.
-   *
-   * You will be making an HTTP request to this API:
-   * https://dog.ceo/api/breeds/image/random
-   *
-   * You should expect this as a response:
-   * {
-   *    "status": "success",
-   *    "message": "https://images.dog.ceo/breeds/poodle-toy/n02113624_9550.jpg"
-   * }
-   *
-   * NOTE: If you see a red squiggly line underneath axios for the error
-   * "axios is not defined", ignore it. This is an issue with the linter.
-   */
+  const button = document.querySelector('.button.button-primary');
+  const dogImage = document.getElementById('image');
+
+  button.addEventListener('click', async function () {
+    try {
+      // Fetch new dog image from the URL using async and await
+      const response = await axios.get('https://dog.ceo/api/breeds/image/random');
+      const data = response.data;
+
+      // Update the src attribute of the image
+      dogImage.src = data.message;
+    } catch (error) {
+      console.error('Error fetching the image:', error);
+    }
+  });
 })();
