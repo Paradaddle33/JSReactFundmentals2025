@@ -17,9 +17,8 @@ let isBuyingDrink = true; // e.g.
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
-if (isBuyingDrink) { 
-    total += drink;
+if (isBuyingDrink) {
+  total += drink;
 }
 
-console.log(total);
-     
+console.log(total); // This will output 8.99 if isBuyingDrink is true

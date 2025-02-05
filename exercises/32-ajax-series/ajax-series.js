@@ -1,4 +1,20 @@
-(function () {
+(async function () {
+  
+  const dropdown = document.getElementById("dropdown");
+
+  try {
+    // Fetch new dog image from the URL using async and await
+    const response = await axios.get('https://rickandmortyapi.com/api/character');
+    const data = response.data;
+    //console.log(data[0]);
+    console.log(response);
+    
+
+    // Update the src attribute of the image
+  } catch (error) {
+    console.error('Error fetching the image:', error);
+  };
+
   /**
    *
    * As a user, I should be able to a pick Rick and Morty character from a drop-down, and it should display an image of that character.
