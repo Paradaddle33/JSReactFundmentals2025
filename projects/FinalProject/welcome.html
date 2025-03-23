@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keep it Simple Cooking - Meal Planner</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="header">Plan Your Meals: Select Recipes by Category</h1>
+
+    <!-- Dropdown Menus -->
+    <div id="dropdowns">
+      <div>
+        <label for="pork-recipes">Pork Recipes:</label>
+        <select id="pork-recipes" onchange="addToMealPlan(this)">
+          <option value="">--Loading Recipes--</option>
+        </select>
+      </div>
+      <div>
+        <label for="beef-recipes">Beef Recipes:</label>
+        <select id="beef-recipes" onchange="addToMealPlan(this)">
+          <option value="">--Loading Recipes--</option>
+        </select>
+      </div>
+      <div>
+        <label for="poultry-recipes">Poultry Recipes:</label>
+        <select id="poultry-recipes" onchange="addToMealPlan(this)">
+          <option value="">--Loading Recipes--</option>
+        </select>
+      </div>
+      <div>
+        <label for="fish-recipes">Fish Recipes:</label>
+        <select id="fish-recipes" onchange="addToMealPlan(this)">
+          <option value="">--Loading Recipes--</option>
+        </select>
+      </div>
+      <div>
+        <label for="vegetarian-recipes">Vegetarian Recipes:</label>
+        <select id="vegetarian-recipes" onchange="addToMealPlan(this)">
+          <option value="">--Loading Recipes--</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Meal Plan Display -->
+    <h2>Your Meal Plan</h2>
+    <div id="meal-plan">
+      <p>No meals added yet.</p>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

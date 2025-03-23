@@ -8,6 +8,7 @@ const numbers = [1, 10, -2, 3, 4]; // e.g.
  */
 
 numbers.forEach((number) => {
+    console.log(number);
     if(number < lowestNumber) {
         lowestNumber = number;
     }

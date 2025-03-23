@@ -4,10 +4,7 @@
 
 For your final project, you will be leverage an API (or APIs) to display dynamic content onto a webpage. You will choose between one of these ideas below, or come up with your own idea that uses a public API.
 
-1. A Movie Website
 2. A Nutrition Website
-3. Giphy CRUD App
-4. Your Own Idea
 
 ## Project Goals
 
